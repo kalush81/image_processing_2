@@ -6,7 +6,11 @@ import { createFileName } from "../utils/create-file-name";
 import { full } from "./validate-query-string";
 import { processImage } from "../utils/process-image";
 
-export default async (req: Request, res: Response, next: NextFunction): Promise<void>=> {
+export default async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
   const processed = "src/images/processed";
   const requestedFile = createFileName(req.data);
   const pathToFile = path.join(__dirname, "../../", processed, requestedFile);

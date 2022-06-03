@@ -10,3 +10,14 @@
 
 - ts configured with ES2021 as code uses replaceAll method
 - linter works before transpilation
+
+## Parameters:
+
+filename : add image to public/images folder to resize
+width : width of the image after resize
+height : height of the image after resize
+
+# endpoint exaxmple:
+
+- http://localhost:3000
+- http://localhost:3000/api/image?filename=fjord&width=200&height=200

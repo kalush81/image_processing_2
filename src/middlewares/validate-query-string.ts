@@ -20,10 +20,9 @@ export const validateQueryStrings = async (
       if (imgFiles.includes(obj.filename + ".jpg")) {
         req.data = obj;
         try {
-          await fs.mkdir('src/images/processed')
-          
+          await fs.mkdir("src/images/processed");
         } catch (error) {
-          console.log(error)
+          console.log(error);
         }
         return next();
       }

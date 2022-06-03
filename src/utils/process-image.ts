@@ -1,4 +1,4 @@
-import sharp, { Sharp } from "sharp";
+import sharp from "sharp";
 import { ReqQuery } from "../middlewares/validate-query-string";
 import { createFileName } from "./create-file-name";
 

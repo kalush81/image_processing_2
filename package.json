@@ -26,7 +26,10 @@
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^4.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "prettier": "2.6.2",
+    "supertest": "^6.2.3",
     "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.4",
@@ -34,9 +37,6 @@
   },
   "dependencies": {
     "express": "^4.18.1",
-    "jasmine": "^4.1.0",
-    "jasmine-spec-reporter": "^7.0.0",
-    "sharp": "^0.30.5",
-    "supertest": "^6.2.3"
+    "sharp": "^0.30.5"
   }
 }
