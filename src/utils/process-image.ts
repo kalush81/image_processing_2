@@ -1,4 +1,4 @@
-import sharp from "sharp";
+import sharp, { Sharp } from "sharp";
 import { ReqQuery } from "../middlewares/validate-query-string";
 import { createFileName } from "./create-file-name";
 
@@ -6,7 +6,7 @@ export const processImage = async (
   from: string,
   imageQuery: ReqQuery,
   to: string
-) => {
+): Promise<sharp.OutputInfo> => {
   const { filename, width, height } = imageQuery;
   const requestedFile = createFileName({ filename, width, height });
 

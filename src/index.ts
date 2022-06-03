@@ -5,7 +5,7 @@ export const app = express();
 
 app.use(routes);
 
-app.use((req, res) => {
+app.use((_req:Request, res: Response) => {
   res.status(404).send("path doesn't exist");
 });
 
