@@ -19,6 +19,12 @@ export const validateQueryStrings = async (
       const imgFiles = await fs.readdir(full);
       if (imgFiles.includes(obj.filename + ".jpg")) {
         req.data = obj;
+        try {
+          await fs.mkdir('src/images/processed')
+          
+        } catch (error) {
+          console.log(error)
+        }
         return next();
       }
       return res.status(400).send(`Image ${obj.filename} does not exist`);
